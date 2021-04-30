@@ -49,7 +49,14 @@ Stampare ogni data con i relativi post -->
     ],
   ]; ?>
 
-    <div class="post">
+  <?php
+
+  $keys = array_keys($array_father);
+  var_dump($keys);
+
+   ?>
+
+     <div class="post">
     Ttitolo: <?= $array_father['01/02/2009']['title'].'<br>' ?>
     Autore: <?= $array_father['01/02/2009']['author'].'<br>' ?>
     Testo: <?=  $array_father['01/02/2009']['text'].'<br>' ?>
@@ -71,7 +78,7 @@ Stampare ogni data con i relativi post -->
     Ttitolo: <?= $array_father['01/04/2019']['title'].'<br>' ?>
     Autore: <?= $array_father['01/04/2019']['author'].'<br>' ?>
     Testo: <?=  $array_father['01/04/2019']['text'].'<br>' ?>
-    </div>
+    </div> 
 
 
 
